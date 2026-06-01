@@ -28,7 +28,7 @@ An example artifact that declares **capability provider** on label `slf4j-backen
 
 PoC:
 
-[x] see https://gist.github.com/cstamas/e4236de328b5da3df1e7c743eaa5abfa or https://gist.github.com/cstamas/571c11d40c9634122109dd3cc8825cb2
+&#x2611; see https://gist.github.com/cstamas/e4236de328b5da3df1e7c743eaa5abfa or https://gist.github.com/cstamas/571c11d40c9634122109dd3cc8825cb2
 
 ### `conditional`
 
