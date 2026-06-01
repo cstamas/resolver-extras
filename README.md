@@ -28,10 +28,15 @@ An example artifact that declares **capability provider** on label `slf4j-backen
 
 PoC:
 
-See https://gist.github.com/cstamas/e4236de328b5da3df1e7c743eaa5abfa or https://gist.github.com/cstamas/571c11d40c9634122109dd3cc8825cb2
-The implementation happens _within Resolver collection_ and has nothing to do which tool we use to "draw the tree".
+TBD
 
 ### `conditional`
 
 * Case1: `mvn toolbox:tree` dependency `slf4j-simple` is absent from tree (condition is not satisfied).
 * Case2: `mvn toolbox:tree -P satisfy`, dependency `slf4j-simple` is present in tree (condition is satisfied).
+
+PoC:
+
+See https://gist.github.com/cstamas/e4236de328b5da3df1e7c743eaa5abfa or https://gist.github.com/cstamas/571c11d40c9634122109dd3cc8825cb2
+The implementation happens _within Resolver collection_ and has nothing to do which tool we use to "draw the tree".
+
