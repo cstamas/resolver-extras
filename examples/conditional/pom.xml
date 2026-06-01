@@ -23,7 +23,7 @@
 
   <profiles>
     <profile>
-      <id>enable</id>
+      <id>satisfy</id>
       <dependencies>
         <dependency>
           <groupId>org.slf4j</groupId>

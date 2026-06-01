@@ -23,7 +23,7 @@
 
   <profiles>
     <profile>
-      <id>fulfil</id>
+      <id>satisfy</id>
       <dependencies>
         <dependency>
           <groupId>org.cstamas.resolver.artifacts</groupId>
