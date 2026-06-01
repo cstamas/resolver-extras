@@ -13,7 +13,7 @@
   <name>${project.groupId}:${project.artifactId}</name>
 
   <dependencies>
-    <!-- based on presence of slf4j-api, conditional-a dependencies are "activated" -->
+    <!-- based on presence of slf4j-api, conditional-a's dependency conditional-b is "activated" -->
     <dependency>
       <groupId>org.cstamas.resolver.artifacts</groupId>
       <artifactId>conditional-a</artifactId>
