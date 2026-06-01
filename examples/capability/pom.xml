@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.cstamas.resolver.examples</groupId>
+    <artifactId>examples</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>capability</artifactId>
+  <name>${project.groupId}:${project.artifactId}</name>
+
+  <dependencies>
+    <!-- capability decides: fails if not present, fulfilled or auto-discovers -->
+    <dependency>
+      <groupId>org.cstamas.resolver.artifacts</groupId>
+      <artifactId>consumer-a</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>fulfil</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.cstamas.resolver.artifacts</groupId>
+          <artifactId>provider-a</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>discover</id>
+      <properties>
+        <capabilities>slf4j-backend(org.cstamas.resolver.artifacts:provider-a:${project.version})</capabilities>
+      </properties>
+    </profile>
+  </profiles>
+</project>
