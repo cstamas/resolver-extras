@@ -22,11 +22,11 @@ An example artifact that declares **capability provider** on label `slf4j-backen
 
 ### `capability`
 
-Case1: `mvn package` build FAILS - consumption not satisfied.
-Case2: `mvn package -P satisfy`, here profile pulls in `provider-a` and consumption is satisfied, build SUCCEEDS.
-Case3: `mvn package -P discover`, here profile provides instructions how to discover provider, build SUCCEEDS.
+* Case1: `mvn package` build FAILS - consumption not satisfied.
+* Case2: `mvn package -P satisfy`, here profile pulls in `provider-a` and consumption is satisfied, build SUCCEEDS.
+* Case3: `mvn package -P discover`, here profile provides instructions how to discover provider, build SUCCEEDS.
 
 ### `conditional`
 
-Case1: `mvn toolbox:tree` dependency `slf4j-simple` is absent from tree (condition is not satisfied).
-Case2: `mvn toolbox:tree -P satisfy`, dependency `slf4j-simple` is present in tree (condition is satisfied).
+* Case1: `mvn toolbox:tree` dependency `slf4j-simple` is absent from tree (condition is not satisfied).
+* Case2: `mvn toolbox:tree -P satisfy`, dependency `slf4j-simple` is present in tree (condition is satisfied).
